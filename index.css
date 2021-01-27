@@ -38,7 +38,7 @@ a:hover {
 	vertical-align: center;
 	
  	grid-gap: 3px;
-	align-self: center;
+	align-self: left;
 	text-align: left;
 	color: white;
 }
