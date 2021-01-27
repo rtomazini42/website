@@ -1,0 +1,46 @@
+body{
+	display: grid;
+	flex-direction: row;
+	justify-content: center;
+
+	background-color: 2d2c2c;
+}
+
+
+.icon{
+	vertical-align: center;
+	display: grid;
+ 	grid-gap: 3px;
+	align-self: center;
+	text-align: center;
+	color: white;
+}
+a {
+text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+a:hover {
+	text-decoration: none;
+	text-shadow: 0 0 0.2em white;
+}
+
+.icon2{
+	vertical-align: center;
+	
+ 	grid-gap: 3px;
+	align-self: center;
+	text-align: center;
+	color: white;
+}
+a {
+text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+a:hover {
+	text-decoration: none;
+	text-shadow: 0 0 0.2em white;
+}
