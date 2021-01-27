@@ -52,3 +52,13 @@ a:hover {
 	text-align: left;
 	color: white;
 }
+a {
+text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+a:hover {
+	text-decoration: none;
+	text-shadow: 0 0 0.2em white;
+}
