@@ -22,8 +22,8 @@ a:hover {
 	vertical-align: center;
 	
  	grid-gap: 3px;
-	align-self: left;
-	text-align: left;
+	align-self: center;
+	text-align: center;
 	color: white;
 }
 a {
@@ -86,85 +86,29 @@ text-shadow: 0 0 1.2em white;
   color: white;
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  a {
-text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
+@media screen and (max-width: 720px) {
+   body{
 
-a:hover {
-	text-decoration: none;
-	text-shadow: 0 0 1.2em white;
-}
-
-.icon2{
-	vertical-align: center;
+	font-family: Overpass;
+	background-color: 0d1117;
+	margin: 0;
+	}
 	
- 	grid-gap: 3px;
-	align-self: left;
-	text-align: left;
-	color: white;
-}
-a {
-text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
+	.container  {
+  	display: grid;
+  	grid-template-columns: 1fr 1fr;
 
-a:hover {
-	text-decoration: none;
-	text-shadow: 0 0 1.2em white;
-}
-.icon{
-	<h1 style="color:white;">
-	<h2 style="color:white;">
-	<h3 style="color:white;">
-	vertical-align: left;
+  	grid-gap: 12px;
+	}
 	
- 	grid-gap: 30px;
-	align-self: left;
-	text-align: center;
-	color: black;
-}
-
-.container  {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
-  grid-gap: 16px;
-}
-
-.banner {
-
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/tijolo.png');
-  background-size: auto;
-  background-position: cover;
-  padding: 50x 50x;
-  text-align: center;
-}
-.banner h1 {
-  color: white;
-text-shadow: 0 0 1.2em white;
-  font-size: 30x;
-  margin: 0;
-}
-
-.banner p {
-  color: white;
-  font-size: 12x;
+	img{
+	width: 64px;
+	height: 64px;
+	}
+	.icon {
+   	width: auto;
+    	height: auto;
+    	}
 }
 
 
-.footer {
-  background: black;
-  text-align: center;
-  padding: 12x 0;
-}
-
-.footer p {
-  color: white;
-}
-  
-}
