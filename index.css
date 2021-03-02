@@ -111,4 +111,28 @@ text-shadow: 0 0 1.2em white;
     	}
 }
 
+@media screen and (max-width: 1024px) {
+   body{
+
+	font-family: Overpass;
+	background-color: 0d1117;
+	margin: 0;
+	}
+	
+	.container  {
+  	display: grid;
+  	grid-template-columns: 1fr 1fr;
+
+  	grid-gap: 12px;
+	}
+	
+	img{
+	width: 64px;
+	height: 64px;
+	}
+	.icon {
+   	width: auto;
+    	height: auto;
+    	}
+}
 
