@@ -86,6 +86,19 @@ text-shadow: 0 0 1.2em white;
   color: white;
 }
 
+.iconF{
+ 	grid-gap: 3px;
+	align-self: center;
+	text-align: left;
+	color: white;
+}
+a {
+text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+
 @media screen and (max-width: 720px) {
    body{
 
@@ -135,4 +148,3 @@ text-shadow: 0 0 1.2em white;
     	height: auto;
     	}
 }
-
