@@ -42,7 +42,7 @@ a:hover {
 	<h3 style="color:white;">
 	vertical-align: left;
 	
- 	grid-gap: 30px;
+ 	grid-gap: 10px;
 	align-self: left;
 	text-align: center;
 	color: black;
@@ -87,7 +87,7 @@ text-align: center;
   width: 100%;
   text-align: center;
   position: fixed;
-  padding: 24px 0;
+  padding: 0px 0;
 }
 
 .footer p {
