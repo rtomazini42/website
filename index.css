@@ -32,7 +32,7 @@ body{
   padding-bottom: 1px;
   text-align: center;
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
 
 }
 
@@ -69,7 +69,9 @@ body{
 }
 
 .conteudo h1{
+	font-weight: bolder;
   padding-top: 10px;
+	padding-bottom: 10px;
   padding-left: 5px;
   font-size: 36px;
   background-color: lightblue;
@@ -78,6 +80,7 @@ body{
 .conteudo h2{
   padding-top: 10px;
   padding-left: 5px;
+	padding-bottom: 5px;
   vertical-align: middle;
   font-size: 22px;
   background-color: lightblue;
@@ -183,12 +186,12 @@ body{
 }
 
 .night h1{
-    background-color: #977dc6;
+    background-color: #090549;
     color: #dedede;
 }
 
 .night h2{
-    background-color: #977dc6;
+    background-color: #2e2a6f;
     color: #dedede;
 }
 
