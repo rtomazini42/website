@@ -1,10 +1,10 @@
 body{
   background: #001524;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(images/wallp.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(images/wallp2.jpg);
   background-size:cover;
   background-repeat:no-repeat;
   background-position:top;
-  background-attachment: fixed, scroll;
+  background-attachment:fixed;
   font-family: 'Lato', sans-serif;
 
   /*colocar créditos da imagem para https://unsplash.com/@cristianpalmer*/
