@@ -1,158 +1,265 @@
 body{
+  background: #001524;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(images/wallp.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:top;
+  background-attachment: fixed, scroll;
+  font-family: 'Lato', sans-serif;
 
-	font-family: 'Roboto Mono',monospace;
-	background-color: 0d1117;
-	margin: 0;
+  /*colocar créditos da imagem para https://unsplash.com/@cristianpalmer*/
 }
-
-
-
-a {
-text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
-
-a:hover {
-	text-decoration: none;
-	text-shadow: 0 0 1.2em white;
-}
-
-.icon2{
-	vertical-align: center;
-	
- 	grid-gap: 3px;
-	align-self: center;
-	text-align: center;
-	color: white;
-}
-a {
-text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
-
-a:hover {
-	text-decoration: none;
-	text-shadow: 0 0 1.2em white;
-}
-.icon{
-	<h1 style="color:white;">
-	<h2 style="color:white;">
-	<h3 style="color:white;">
-	vertical-align: left;
-	
- 	grid-gap: 10px;
-	align-self: left;
-	text-align: center;
-	color: black;
-}
-
-.container  {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-
-  grid-gap: 16px;
-}
-
 
 
 
 .banner {
-	
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/tijolo.png');
-  background-size: auto;
-  background-position: cover;
-  padding: 100px 10px;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  /*background-color: rgba(255,255,255,0.4);*/
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: inherit;
+  position: relative;
+  border-style: inherit;
+  /*border-radius: 5px;*/
+  /*box-shadow: 10px 5px 5px black;*/
 }
-.banner h1 {
-  color: white;
-text-shadow: 0 0 3.2em white;
-text-align: center;
+
+.banner h1{
   font-size: 48px;
-  margin: 0;
-}
-
-.banner p {
-  color: white;
-  font-size: 24px;
-}
-
-
-.footer {
-  background: black;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 1px;
   text-align: center;
-  position: fixed;
-  padding: 0px 0;
+  color: white;
+  font-weight: bold;
+
 }
 
-.footer p {
+.banner img{
+  /*filter: invert(100%);*/
+  width: 10%;
+  height: 10%;
+  margin: auto;
+  display: block;
+}
+
+
+.js-noite{
+  visibility: hidden;
+  background-color: #212121;
   color: white;
 }
-
-.iconF{
- 	grid-gap: 3px;
-	align-self: center;
-	text-align: left;
-	color: white;
+.js-dia{
+  position: absolute;
+  visibility: visible;
+  background-color: lightblue;
+  color: #212121;
 }
-a {
-text-decoration: none;
+
+.conteudo {
+  background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 3%;
+  position: relative;
+  border-style: solid;
+  border-width: inherit;
+  border-color: white;
+}
+
+.conteudo h1{
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: 36px;
+  background-color: lightblue;
+}
+
+.conteudo h2{
+  padding-top: 10px;
+  padding-left: 5px;
+  vertical-align: middle;
+  font-size: 22px;
+  background-color: lightblue;
+}
+
+.conteudo h2{
+  padding-top: 10px;
+  padding-left: 5px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.conteudo a{
+  color: #977dc6;
+  font-weight: 600;
+  /**padding: 5px;**/
+  margin-left: 15px;
+  font-size: 16px;
+
+}
+
+.conteudo p{
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.conteudo .codigo #primeira{
+    color: yellow;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.conteudo .codigo #comentario{
+    color: lightblue;
+    margin-left: 3px;
+
+}
+
+.conteudo .codigo{
+
+  padding-left: 10px;
+  background-color: #282828;
+  font-family: monospace;
+  font-weight: bold;
   color: white;
-  transition: 0.3s;
+  margin-left: 25%;
+  margin-right: 25%;
+  position: relative;
+  /*box-shadow: 3px 3px 3px 1px black;*/
+  border-style: solid;
+  border-width:medium;
+  box-decoration-break: slice;
+  border-radius: 13px;
+  border-color: #282828;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.conteudo .codigo #titulo{
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-width:medium;
+    border-radius: 10%;
+    text-align: center;
+
+}
+
+.conteudo .codigo p{
+  padding-left: 3px;
+}
+
+.conteudo img{
+	width: 5%;
+}
+
+.conteudo .logo img{
+  width: 20%;
+  height: auto;
+  border-radius: 25px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+.conteudo ul{
+	margin-left: 30px;
+	font-weight: bolder;
+	margin-bottom: 3px;
+}
+.conteudo li{
+	margin-left: 30px;
+	font-weight: bolder;
+	margin-bottom: 11px;
+	font-size: 16px;
 }
 
 
-@media screen and (max-width: 720px) {
-   body{
-
-	
-	background-color: 0d1117;
-	margin: 0;
-	}
-	
-	.container  {
-  	display: grid;
-  	grid-template-columns: 1fr 1fr;
-
-  	grid-gap: 12px;
-	}
-	
-	img{
-	width: 64px;
-	height: 64px;
-	}
-	.icon {
-   	width: auto;
-    	height: auto;
-    	}
+.night {
+    background-color: #212121;
+    color: #dedede;
+    border-color: #212121;
 }
 
-@media screen and (max-width: 1024px) {
-   body{
+.night h1{
+    background-color: #977dc6;
+    color: #dedede;
+}
 
-	
-	background-color: 0d1117;
-	margin: 0;
-	}
-	
-	.container  {
-  	display: grid;
-  	grid-template-columns: 1fr 1fr;
+.night h2{
+    background-color: #977dc6;
+    color: #dedede;
+}
 
-  	grid-gap: 12px;
-	}
-	
-	img{
-	width: 64px;
-	height: 64px;
-	}
-	.icon {
-   	width: auto;
-    	height: auto;
-    	}
+
+
+
+/*css ocean*/
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+.content a{
+  color: black;
+  text-align:center;
+  background-color: white;
+}
+
+.content img{
+  width: 4%;
+  margin-top:20px;
+  margin-bottom:0px;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:26px;
+  }
 }
