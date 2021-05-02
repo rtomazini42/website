@@ -212,12 +212,12 @@ body{
   position:relative;
   height:20vh;
   text-align:center;
-  background-color: white;
+  background-color: rgba(33,33,33,1);
 }
 .content a{
-  color: black;
+  color: white;
   text-align:center;
-  background-color: white;
+  background-color: rgba(33,33,33,1,);
 }
 
 .content img{
