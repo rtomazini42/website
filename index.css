@@ -38,7 +38,7 @@ body{
 
 .banner img{
   /*filter: invert(100%);*/
-  width: 10%;
+  width: 13%;
   height: 10%;
   margin: auto;
   display: block;
@@ -154,10 +154,18 @@ body{
 
 .conteudo img{
 	width: 5%;
+  overflow: hidden;
+  margin: 0;
 }
 
-.conteudo .logo img{
-  width: 20%;
+.conteudo a{
+	width: 5%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.conteudo  img .logo{
+  width: 10%;
   height: auto;
   border-radius: 25px;
 	display: block;
@@ -165,6 +173,15 @@ body{
   margin-right: auto;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
+}
+
+.conteudo img {
+  width: 10%;
+  display: inline-block;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .conteudo ul{
 	margin-left: 30px;
