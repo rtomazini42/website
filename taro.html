@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="utf-8">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tomazini</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Jogos">
+		<meta name="keywords" content="DEV, HTML,CSS, JavaScript, Python, Desenvolvedor, Renan, Tomazini, Renan Tomazini, webdesign, Design, github">
+		<meta name="author" content="Renan Tomazini">
+		<meta name="robots" content="index,follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+		<link rel="icon" href="https://rtomazini42.github.io/images/cafe.png">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<!--<link rel="stylesheet" href="index.css">-->
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" href="taro.css">
+	</head>
+  <body>
+    <div class="banner">
+
+      <h1>Tarot online</h1>
+      <img src= "taro_img/cartas/trás.jpg"></img>
+    </div>
+
+		<div class="conteudo">
+			<!-- Área reservada para funcionamento desses botões-->
+			<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+			<script src="jquery.js"></script>
+			<button class="btn js-dia">☀</button>
+			<button class="btn js-noite">☀</button>
+
+			<script>
+				$(".conteudo").addClass('night');
+				$(".conteudo h1").addClass('night h1')
+
+
+					$('.js-noite').click(function(){
+						$(".js-noite").css("visibility", "hidden")
+						$(".js-dia").css("visibility", "visible")
+						$(".conteudo").addClass('night');
+						$(".conteudo h1").addClass('night h1');
+
+					});
+					$('.js-dia').click(function(){
+						$(".js-noite").css("visibility", "visible")
+						$(".js-dia").css("visibility", "hidden");
+						$(".conteudo").removeClass('night');
+						$(".conteudo h1").removeClass('night h1');
+					});
+			</script>
+			<!-- Fim da área -->
+
+			<h1>O que é isso?</h1>
+			<p>Um pequeno jogo de Tarot onde você se concentra, aperta o botão abaixo e vemos o resultado.</p>
+			<br></br>
+
+			<button class="btn SORTEAR" id = sortear>SORTEAR</button>
+
+				<div card1 id="card">
+					<h2 id="nomeCarta1">????????</h2>
+					<img id="carta1img" src= "taro_img/cartas/trás.jpg"></img>
+					<p id = "desc1"></p>
+				</div>
+				<div card2 id="card">
+					<h2 id="nomeCarta2">????????</h2>
+					<img src= "taro_img/cartas/trás.jpg" id="carta2img"></img>
+					<p id = "desc2"></p>
+				</div>
+				<div card3 id="card">
+					<h2 id="nomeCarta3">????????</h2>
+					<img src= "taro_img/cartas/trás.jpg" id="carta3img"></img>
+					<p id = "desc3"></p>
+				</div>
+				<br></br>
+
+			<script>
+				$('.SORTEAR').click(function(){
+					var cartasNomes = ["O louco","O mago","A sarcedotisa", "A imperatriz","O Imperador", "O Hierofante", "Os enamorados", "O Carro de Guerra", "A Justiça", "O Eremita", "A roda da forturna", "A força", "O Enforcado", "A morte", "A Temperança", "O Diabo", "A torre fulminada", "A estrela", "A lua", "O sol", "O julgamento", "O mundo"];
+					var numeros = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21]
+					var descs = ["O Louco? Confie no acaso, mas aconselho prudência. Ele representa o início de uma jornada.","O Mago, você tem talentos escondidos que ainda não usou a seu favor.Precisa tomar uma atitude","Sacerdotisa. Inteligência é uma de suas habilidades, você deve usar isso para si. Busque conhecimento.","A Imperatriz. Neste momento, as conquistas estão favorecidas. É um momento de muita força e muita sorte. ","Imperador? O Imperador representa a lei, os limites e a ordem, no contexto de liderança e autoridade silenciosa.","Hierofante. Ele mostra que tudo será resolvido de maneira amigável, buscando encontrar sempre o acordo.","É um momento propício para tomar decisões. Há barreiras que devem ser ultrapassadas. Tome a decisão com o coração. ","O Carro representa o momento em que o viajante passou pela encruzilhada, tomou um rumo firme e está determinado a cumprir mais etapas evolutivas.","A Carta da Justiça é pra lembrar: Reflita sempre antes de tomar decisões. Elas devem ser justas.","Eremita! Dedique-se ao estudo, reflita, ele quer te lembrar disso.","Roda da Fortuna! A vida segue e a sorte nem sempre será ao seu favor, nem sempre será contra você.","Força,esse é o momento em que o caminhante precisa aprender a dominar a sua força interior e exterior.","O Enforcado. É hora de sacrifícios, deve-se dedicar para algo futuro, então abandonar velhos hábitos.","A Morte mostra que mudanças involuntárias irão ocorrer e que não se deve tentar impedi-las, pelo contrário, deve-se aceitá-las.","Temperança, necessidade de se equilibrar o uso da razão e da emoção nas questões capitais ou de relevância mais acentuada.","O Diabo, evite tentações e prazeres imediatos.","A Torre, mudança através da força da natureza é uma oportunidade de um novo começo material sem rompimento propriamente com o espiritual.","A Estrela significa esperança, ajuda inesperada,  inspiração e flexibilidade.","A Lua, é o momento de reavaliar a direção, repensar escolhas passadas que podem estar lhe afetando.","O Sol,é preciso aceitar a vida conforme ela é e para viver contente com as alegrias que percebe que tem no dia-a-dia.","O Julgamento. Este é um momento de separação entre o passado e o futuro, neste momento o consulente irá colher os frutos do que plantou.","O mundo? fim de um ciclo e preparação para um novo começo,suavidade e felicidade."]
+					var numSorteados = [];
+					while(numSorteados.length != 3){
+						var numeroSorteado = parseInt(Math.random() * numeros.length);
+						if (!numSorteados.includes(numeroSorteado)){
+							numSorteados.push(numeros[numeroSorteado]);
+						}
+
+
+
+
+
+					}
+	    		//cartaSorteada = cartasNomes[numeroCarta];
+					//cartas sorteadas:
+
+					var c1n = document.getElementById("nomeCarta1");
+					c1n.innerHTML = cartasNomes[numSorteados[0]];
+					var c1i = document.getElementById("carta1img").src="taro_img/cartas/cartas-" +numSorteados[0]+ ".jpg";
+					var c1d = document.getElementById("desc1");
+					c1d.innerHTML = descs[numSorteados[0]];
+					//c1i.innerHTML.src = "src = taro_img/cartas/cartas-" +numSorteados[0]+ ".jpg";
+
+
+					var c2n = document.getElementById("nomeCarta2");
+					c2n.innerHTML = cartasNomes[numSorteados[1]];
+					var c2i = document.getElementById("carta2img").src="taro_img/cartas/cartas-" +numSorteados[1]+ ".jpg";
+					var c2d = document.getElementById("desc2");
+					c2d.innerHTML = descs[numSorteados[1]];
+
+
+					var c3n = document.getElementById("nomeCarta3");
+					c3n.innerHTML = cartasNomes[numSorteados[2]];
+					var c3i = document.getElementById("carta3img").src="taro_img/cartas/cartas-" +numSorteados[2]+ ".jpg";
+					var c3d = document.getElementById("desc3");
+					c3d.innerHTML = descs[numSorteados[2]];
+
+				});
+			</script>
+
+		</div>
+
+
+
+
+		<!--Waves Container-->
+		<div>
+			<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+			<defs>
+			<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+			</defs>
+			<g class="parallax">
+			<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(33,33,33,0.7" />
+			<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(33,33,33,0.5)" />
+			<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(33,33,33,0.3)" />
+			<use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(33,33,33,1)" />
+			</g>
+			</svg>
+			</div>
+			<!--Waves end-->
+
+			<div class="content flex">
+				<br></br>
+				<a href="https://rtomazini42.github.io/">Criado por Renan Tomazini</a><br></br>
+
+			
+		</div>
+
+		</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="utf-8">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tomazini</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Jogos">
+		<meta name="keywords" content="DEV, HTML,CSS, JavaScript, Python, Desenvolvedor, Renan, Tomazini, Renan Tomazini, webdesign, Design, github">
+		<meta name="author" content="Renan Tomazini">
+		<meta name="robots" content="index,follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+		<link rel="icon" href="https://rtomazini42.github.io/images/cafe.png">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<link rel="stylesheet" href="estilos.css">
+		<link rel="stylesheet" href="index.css">
+	</head>
+  <body>
+    <div class="banner">
+
+      <h1>Mini Curadoria de Jogos</h1>
+      <img src= "images/jogo.png"></img>
+    </div>
+		<div class="conteudo">
+			<!-- Área reservada para funcionamento desses botões-->
+			<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+			<script src="jquery.js"></script>
+			<button class="btn js-dia">☀</button>
+			<button class="btn js-noite">☀</button>
+
+			<script>
+				$(".conteudo").addClass('night');
+				$(".conteudo h1").addClass('night h1')
+
+
+					$('.js-noite').click(function(){
+						$(".js-noite").css("visibility", "hidden")
+						$(".js-dia").css("visibility", "visible")
+						$(".conteudo").addClass('night');
+						$(".conteudo h1").addClass('night h1');
+
+					});
+					$('.js-dia').click(function(){
+						$(".js-noite").css("visibility", "visible")
+						$(".js-dia").css("visibility", "hidden");
+						$(".conteudo").removeClass('night');
+						$(".conteudo h1").removeClass('night h1');
+					});
+			</script>
+			<!-- Fim da área -->
+
+	<div>
+		<h1>O que é isso?</h1>
+		<p>Aqui está uma pequena lista de jogos relacionados á áreas de estudos</p>
+		<br></br>
+
+		<h2>Programação</h2>
+		<a href="https://store.steampowered.com/app/504210/SHENZHEN_IO/"><p>Shezen I/O</p></a>
+		<p>Jogo de simulação de programação de dispositivos eletronicos.</p>
+		<br></br>
+		<a href="https://store.steampowered.com/app/619150/while_True_learn/"><p>while True: learn()</p></a>
+		<p>Nesse jogo, você trabalha como um programador que descobre acidentalmente que o seu gato é muito bom em programar, mas não tão bom em falar língua humana. Agora esse programador (você mesmo!) precisa aprender tudo sobre aprendizado de máquina e usar programação visual para criar um sistema de reconhecimento de linguagem de gato para humano.</p>
+		<br></br>
+		<a href="https://store.steampowered.com/app/1397290/Comet_64/"><p>Comet 64</p></a>
+		<p>Comet 64 é um jogo de quebra-cabeça de programação. O ano é 1984. Tudo que você tem é um cometa 64 computador doméstico e o manual do operador que o acompanha. </p>
+		<br></br>
+		<a href="https://store.steampowered.com/app/576030/MHRD/"><p>MHRD</p></a>
+		<p>MHRD é um jogo de design de hardware, no qual você projeta vários circuitos de hardware em uma linguagem de descrição de hardware. Os circuitos de hardware que você projeta ficam mais complexos à medida que avança, até que você crie um projeto de CPU totalmente funcional.</p>
+		<br></br>
+
+
+		<h2>Gerenciamento</h2>
+		<a href="https://store.steampowered.com/app/233450/Prison_Architect/"><p>Prison Architect</p></a>
+		<p>Arquitetura e gerenciamento de prisões? Foucault corre aqui!</p>
+		<br></br>
+		<a href="https://store.steampowered.com/app/57690/Tropico_4/"><p>Tropico 4</p></a>
+		<p>Sim, eu sei, problematicamente uma visão da política e cultura caribenha, porém, divertido demais.</p>
+		<br></br>
+
+		<h2>Relaxantes</h2>
+		<a href="https://store.steampowered.com/app/1291340/Townscaper/"><p>Townscaper</p></a>
+		<p>Só construir a cidadezinha, sem desafios, só visual bonito.</p>
+		<br></br>
+
+
+	</div>

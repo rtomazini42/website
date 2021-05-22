@@ -1,0 +1,312 @@
+body{
+  background: #001524;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)), url(images/wallp2.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:top;
+  background-attachment:fixed;
+  font-family: 'Lato', sans-serif;
+
+  /*colocar créditos da imagem para https://unsplash.com/@cristianpalmer*/
+}
+
+
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.4);
+  /*background-color: rgba(255,255,255,0.4);*/
+  margin-left: 15%;
+  margin-right: 15%;
+	padding-bottom: 25px;
+	margin-bottom: 0px;
+  margin-bottom: inherit;
+  position: relative;
+  border-style: inherit;
+  /*border-radius: 5px;*/
+  /*box-shadow: 10px 5px 5px black;*/
+}
+
+.banner h1{
+  font-size: 48px;
+  padding-top: 15px;
+  padding-bottom: 1px;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+
+}
+
+.banner img{
+  /*filter: invert(100%);*/
+  width: 13%;
+  height: 10%;
+  margin: auto;
+  display: block;
+}
+
+
+.js-noite{
+  visibility: hidden;
+  background-color: #212121;
+  color: white;
+}
+.js-dia{
+  position: absolute;
+  visibility: visible;
+  background-color: lightblue;
+  color: #212121;
+}
+
+.conteudo {
+  background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 3%;
+  position: relative;
+  border-style: solid;
+  border-width: inherit;
+  border-color: white;
+}
+
+.conteudo h1{
+	font-weight: bolder;
+  padding-top: 10px;
+	padding-bottom: 10px;
+  padding-left: 5px;
+  font-size: 36px;
+  background-color: lightblue;
+}
+
+.conteudo h2{
+  padding-top: 10px;
+  padding-left: 5px;
+	padding-bottom: 5px;
+  vertical-align: middle;
+  font-size: 22px;
+  background-color: lightblue;
+}
+
+.conteudo h2{
+  padding-top: 10px;
+  padding-left: 5px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.conteudo a{
+  color: #977dc6;
+  font-weight: 600;
+  /**padding: 5px;**/
+  margin-left: 15px;
+  font-size: 16px;
+
+}
+
+.conteudo p{
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.conteudo .codigo #primeira{
+    color: yellow;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.conteudo .codigo #comentario{
+    color: lightblue;
+    margin-left: 3px;
+
+}
+
+.conteudo .codigo{
+
+  padding-left: 10px;
+  background-color: #282828;
+  font-family: monospace;
+  font-weight: bold;
+  color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+  position: relative;
+  /*box-shadow: 3px 3px 3px 1px black;*/
+  border-style: solid;
+  border-width:medium;
+  box-decoration-break: slice;
+  border-radius: 13px;
+  border-color: #282828;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.conteudo .codigo #titulo{
+    color: black;
+    background-color: white;
+    border-style: solid;
+    border-width:medium;
+    border-radius: 10%;
+    text-align: center;
+
+}
+
+.conteudo .codigo p{
+  padding-left: 3px;
+}
+
+
+.conteudo a{
+	width: 5%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.conteudo  img .logo{
+  width: 10%;
+  height: auto;
+  border-radius: 25px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+
+
+.conteudo ul{
+	margin-left: 30px;
+	font-weight: bolder;
+	margin-bottom: 3px;
+}
+.conteudo li{
+	margin-left: 30px;
+	font-weight: bolder;
+	margin-bottom: 11px;
+	font-size: 16px;
+}
+
+
+.night {
+    background-color: #212121;
+    color: #dedede;
+    border-color: #212121;
+}
+
+.night h1{
+    background-color: #090549;
+    color: #dedede;
+}
+
+.night h2{
+    background-color: #2e2a6f;
+    color: #dedede;
+}
+
+/*classes novas*/
+
+.SORTEAR {
+  background-color: #2e2a6f;
+  color: #dedede;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin: 0 auto;
+  font-size: 22px;
+}
+
+
+#card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  /*display: table;*/
+  display: flow-root;
+
+}
+#card h2{
+  text-align: center;
+  font-weight: bolder;
+  /*background-color: #2e2a6f;*/
+
+}
+
+#card img{
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+
+}
+
+#card p{
+  margin-left: 15px;
+  padding: 20px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+
+/*css ocean*/
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: rgba(33,33,33,1);
+}
+.content a{
+  color: white;
+  text-align:center;
+  background-color: rgba(33,33,33,1,);
+}
+
+
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% {
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:26px;
+  }
+}
